@@ -21,7 +21,8 @@
 									src="C:\Users\User\Downloads\imgs\header.svg" alt=""></a>
 						</div>
 						<div class="header-kinds-btns">
-							<a href="#" class="header-kinds-btn"><span class="header-kids-btn-underline">WOMEN</span></a>
+							<a href="#" class="header-kinds-btn"><span
+									class="header-kids-btn-underline">WOMEN</span></a>
 							<a href="#" class="header-kinds-btn"><span class="header-kids-btn-underline">MEN</span></a>
 							<a href="#" class="header-kinds-btn"><span class="header-kids-btn-underline">KIDS</span></a>
 							<a href="#" class="header-kinds-btn"><span class="header-kids-btn-underline">BABY</span></a>
@@ -74,17 +75,34 @@
 					<h4 class="sorting-heading">並べ替え</h4>
 					<nav>
 						<div class="sorting-hamberger-btn">
-							<ul>
+							<!-- <ul>
 								<li><a href="#" class="sorting-hamberger-menu">おすすめ順</a></li>
 								<li><a href="#" class="sorting-hamberger-menu">新作順</a></li>
 								<li><a href="#" class="sorting-hamberger-menu">価格：安い順</a></li>
 								<li><a href="#" class="sorting-hamberger-menu">価格：高い順</a></li>
 								<li><a href="#" class="sorting-hamberger-menu">評価順</a></li>
-							</ul>
+							</ul> -->
+							<!-- <select name="sorting-lists" name="sorting">
+								<option class="sorting-list" value="recommended-order">おすすめ順</option>
+								<option class="sorting-list" value="newest-order">新作順</option>
+								<option class="sorting-list" value="cheapest-order">価格：安い順</option>
+								<option class="sorting-list" value="highest-order">価格：高い順</option>
+								<option class="sorting-list" value="evaluation-order">評価順</option>
+							</select> -->
+							<!-- <label class="wrapper" for="states">This label is stacked above the select</label> -->
+							<div class="button dropdown">
+								<select id="colorselector">
+									<option class="sorting-list" value="red">おすすめ順</option>
+									<option class="sorting-list" value="yellow">新作順</option>
+									<option class="sorting-list" value="blue">価格：安い順</option>
+									<option class="sorting-list" value="blue">価格：高い順</option>
+									<option class="sorting-list" value="blue">評価順</option>
+								</select>
+							</div>
 						</div>
 					</nav>
 				</div>
-				</div>
+			</div>
 		</div>
 	</section>
 
@@ -106,7 +124,6 @@
 		</div>
 	</section>
 
-
 	<section class="kinds-tab-wrapper">
 		<div class="inner">
 			<div class="kinds-tab">
@@ -122,21 +139,75 @@
 		<div class="inner">
 			<div class="product-container">
 				<div class="side-bar">
-					<div class="condition-bar">
+					<!-- <div class="condition-bar">
 						<a href="" class="condition-btn">カテゴリー</a>
 						<a href="" class="condition-btn">価格</a>
 						<a href="" class="condition-btn">サイズ</a>
 						<a href="" class="condition-btn">カラー</a>
 						<a href="" class="condition-btn">その他の条件</a>
+					</div> -->
+					<div class="box">
+						<!---->
+						<button class="btn">カテゴリー<i class="fas fa-plus"></i></button>
+						<div class="panel">
+							<ul>
+								<li class="category-lists">
+									<a href="" class="category-list">トップス</a>
+									<a href="" class="category-list">ボトムス</a>
+									<a href="" class="category-list">アウター</a>
+									<a href="" class="category-list">ルーム・ホーム</a>
+									<a href="" class="category-list">スーツ・フォーマル</a>
+									<a href="" class="category-list">スポーツユーティリティウェア</a>
+								</li>
+							</ul>
+						</div>
+						<!---->
+						<button class="btn">価格<i class="fas fa-plus"></i></button>
+						<div class="panel">
+							<h2>About</h2>
+						</div>
+						<!---->
+						<button class="btn">サイズ<i class="fas fa-plus"></i></button>
+						<div class="panel">
+							<h2>Menu</h2>
+						</div>
+						<!---->
+						<button class="btn">カラー<i class="fas fa-plus"></i></button>
+						<div class="panel">
+							<ul>
+								<li>
+									<div class="condition-color-item">
+										<div class="condition-color white"></div>
+										<p>White</p>
+									</div>
+									<div class="condition-color-item">
+										<div class="condition-color gray"></div>
+										<p>Gray</p>
+									</div>
+									<div class="condition-color-item">
+										<div class="condition-color black"></div>
+										<p>Black</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<button class="btn">その他の条件<i class="fas fa-plus"></i></button>
+						<div class="panel">
+							<p>フィルタ―は使用できません</p>
+						</div>
 					</div>
 				</div>
 				<div class="product-cards">
 					<div class="product-card">
-						<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/425213/item/goods_30_425213.jpg?width=402" alt="" class="product-img">
+						<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/425213/item/goods_30_425213.jpg?width=402"
+							alt="" class="product-img">
 						<div class="product-colors">
-							<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/425213/chip/goods_00_425213_chip.jpg" alt="" class="color">
-							<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/425213/chip/goods_09_425213_chip.jpg" alt="" class="color">
-							<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/425213/chip/goods_27_425213_chip.jpg" alt="" class="color">
+							<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/425213/chip/goods_00_425213_chip.jpg"
+								alt="" class="color">
+							<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/425213/chip/goods_09_425213_chip.jpg"
+								alt="" class="color">
+							<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/425213/chip/goods_27_425213_chip.jpg"
+								alt="" class="color">
 						</div>
 						<div class="product-text">
 							<p class="product-type">男女兼用</p>
@@ -147,13 +218,15 @@
 						<p class="product-info">4月1日まで期間限定価格</p>
 						<div class="product-evaluation">
 							<span class="star5_rating" data-rate="4.5"></span>
-							(<a class= "evaluation-num">2589</a>)
+							(<a class="evaluation-num">2589</a>)
 						</div>
 					</div>
 					<div class="product-card">
-						<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/433045/item/goods_32_433045.jpg?width=402" alt="" class="product-img">
+						<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/433045/item/goods_32_433045.jpg?width=402"
+							alt="" class="product-img">
 						<div class="product-colors">
-							<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/433045/chip/goods_32_433045_chip.jpg" alt="" class="color">
+							<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/433045/chip/goods_32_433045_chip.jpg"
+								alt="" class="color">
 						</div>
 						<div class="product-text">
 							<p class="product-type">男女兼用</p>
@@ -164,13 +237,15 @@
 						<p class="product-info">4月1日まで期間限定価格</p>
 						<div class="product-evaluation">
 							<span class="star5_rating" data-rate="4.5"></span>
-							(<a class= "evaluation-num">2589</a>)
+							(<a class="evaluation-num">2589</a>)
 						</div>
 					</div>
 					<div class="product-card">
-						<img  src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/433046/item/goods_32_433046.jpg?width=402" alt="" class="product-img">
+						<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/433046/item/goods_32_433046.jpg?width=402"
+							alt="" class="product-img">
 						<div class="product-colors">
-							<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/433046/chip/goods_32_433046_chip.jpg" alt="" class="color">
+							<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/433046/chip/goods_32_433046_chip.jpg"
+								alt="" class="color">
 						</div>
 						<div class="product-text">
 							<p class="product-type">男女兼用</p>
@@ -181,15 +256,19 @@
 						<p class="product-info">4月1日まで期間限定価格</p>
 						<div class="product-evaluation">
 							<span class="star5_rating" data-rate="4.5"></span>
-							(<a class= "evaluation-num">2589</a>)
+							(<a class="evaluation-num">2589</a>)
 						</div>
 					</div>
 					<div class="product-card">
-						<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/436588/item/goods_30_436588.jpg?width=402" alt="" class="product-img">
+						<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/436588/item/goods_30_436588.jpg?width=402"
+							alt="" class="product-img">
 						<div class="product-colors">
-							<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/433046/chip/goods_32_433046_chip.jpg" alt="" class="color">
-							<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/436588/chip/goods_30_436588_chip.jpg" alt="" class="color">
-							<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/436588/chip/goods_69_436588_chip.jpg" alt="" class="color">
+							<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/433046/chip/goods_32_433046_chip.jpg"
+								alt="" class="color">
+							<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/436588/chip/goods_30_436588_chip.jpg"
+								alt="" class="color">
+							<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/436588/chip/goods_69_436588_chip.jpg"
+								alt="" class="color">
 						</div>
 						<div class="product-text">
 							<p class="product-type">男女兼用</p>
@@ -200,7 +279,7 @@
 						<p class="product-info">4月1日まで期間限定価格</p>
 						<div class="product-evaluation">
 							<span class="star5_rating" data-rate="4.5"></span>
-							(<a class= "evaluation-num">2589</a>)
+							(<a class="evaluation-num">2589</a>)
 						</div>
 					</div>
 				</div>
@@ -211,84 +290,96 @@
 	<section class="recommend-wrapper">
 		<div class="inner">
 			<!-- <div class="recommend-heading"> -->
-				<h1 class="recommend-heading">おすすめ商品</h1>
+			<h1 class="recommend-heading">おすすめ商品</h1>
 			<!-- </div> -->
-				<div class="recommend-cards">
-					<div class="recommend-card">
-						<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/433046/item/goods_32_433046.jpg?width=552" alt="" class="recommend-img">
-						<div class="recommend-colors">
-							<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/433046/chip/goods_32_433046_chip.jpg" alt="" class="color">
-						</div>
-						<div class="recommend-text">
-							<p class="recommend-type">男女兼用</p>
-							<p class="recommend-size">XS-4XL</p>
-						</div>
-						<h5 class="recommend-name">クールネックT（長袖）</h5>
-						<p class="recommend-price">¥1,290</p>
-						<p class="recommend-info">4月1日まで期間限定価格</p>
-						<div class="recommend-evaluation">
-							<span class="star5_rating" data-rate="4.5"></span>
-							(<a class= "evaluation-num">2589</a>)
-						</div>
+			<div class="recommend-cards">
+				<div class="recommend-card">
+					<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/433046/item/goods_32_433046.jpg?width=552"
+						alt="" class="recommend-img">
+					<div class="recommend-colors">
+						<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/433046/chip/goods_32_433046_chip.jpg"
+							alt="" class="color">
 					</div>
-					<div class="recommend-card">
-						<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/433045/item/goods_32_433045.jpg?width=552" alt="" class="recommend-img">
-						<div class="recommend-colors">
-							<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/433045/chip/goods_32_433045_chip.jpg" alt="" class="color">
-						</div>
-						<div class="recommend-text">
-							<p class="recommend-type">男女兼用</p>
-							<p class="recommend-size">XS-4XL</p>
-						</div>
-						<h5 class="recommend-name">クールネックT（長袖）</h5>
-						<p class="recommend-price">¥1,290</p>
-						<p class="recommend-info">4月1日まで期間限定価格</p>
-						<div class="recommend-evaluation">
-							<span class="star5_rating" data-rate="4.5"></span>
-							(<a class= "evaluation-num">2589</a>)
-						</div>
+					<div class="recommend-text">
+						<p class="recommend-type">男女兼用</p>
+						<p class="recommend-size">XS-4XL</p>
 					</div>
-					<div class="recommend-card">
-						<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/425028/item/goods_57_425028.jpg?width=552" alt="" class="recommend-img">
-						<div class="recommend-colors">
-							<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/425028/chip/goods_03_425028_chip.jpg" alt="" class="color">
-							<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/425028/chip/goods_09_425028_chip.jpg" alt="" class="color">
-							<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/425028/chip/goods_69_425028_chip.jpg" alt="" class="color">
-						</div>
-						<div class="recommend-text">
-							<p class="recommend-type">男女兼用</p>
-							<p class="recommend-size">XS-4XL</p>
-						</div>
-						<h5 class="recommend-name">クールネックT（長袖）</h5>
-						<p class="recommend-price">¥1,290</p>
-						<p class="recommend-info">4月1日まで期間限定価格</p>
-						<div class="recommend-evaluation">
-							<span class="star5_rating" data-rate="4.5"></span>
-							(<a class= "evaluation-num">2589</a>)
-						</div>
+					<h5 class="recommend-name">クールネックT（長袖）</h5>
+					<p class="recommend-price">¥1,290</p>
+					<p class="recommend-info">4月1日まで期間限定価格</p>
+					<div class="recommend-evaluation">
+						<span class="star5_rating" data-rate="4.5"></span>
+						(<a class="evaluation-num">2589</a>)
 					</div>
-					<div class="recommend-card">
-						<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/419503/item/goods_03_419503.jpg?width=552" alt="" class="recommend-img">
-						<div class="recommend-colors">
-							<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/419503/chip/goods_02_419503_chip.jpg" alt="" class="color">
-							<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/419503/chip/goods_03_419503_chip.jpg" alt="" class="color">
-							<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/419503/chip/goods_09_419503_chip.jpg" alt="" class="color">
-						</div>
-						<div class="recommend-text">
-							<p class="recommend-type">男女兼用</p>
-							<p class="recommend-size">XS-4XL</p>
-						</div>
-						<h5 class="recommend-name">クールネックT（長袖）</h5>
-						<p class="recommend-price">¥1,290</p>
-						<p class="recommend-info">4月1日まで期間限定価格</p>
-						<div class="recommend-evaluation">
-							<span class="star5_rating" data-rate="4.5"></span>
-							(<a class= "evaluation-num">2589</a>)
-						</div>
-					</div>
-					
 				</div>
-			
+				<div class="recommend-card">
+					<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/433045/item/goods_32_433045.jpg?width=552"
+						alt="" class="recommend-img">
+					<div class="recommend-colors">
+						<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/433045/chip/goods_32_433045_chip.jpg"
+							alt="" class="color">
+					</div>
+					<div class="recommend-text">
+						<p class="recommend-type">男女兼用</p>
+						<p class="recommend-size">XS-4XL</p>
+					</div>
+					<h5 class="recommend-name">クールネックT（長袖）</h5>
+					<p class="recommend-price">¥1,290</p>
+					<p class="recommend-info">4月1日まで期間限定価格</p>
+					<div class="recommend-evaluation">
+						<span class="star5_rating" data-rate="4.5"></span>
+						(<a class="evaluation-num">2589</a>)
+					</div>
+				</div>
+				<div class="recommend-card">
+					<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/425028/item/goods_57_425028.jpg?width=552"
+						alt="" class="recommend-img">
+					<div class="recommend-colors">
+						<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/425028/chip/goods_03_425028_chip.jpg"
+							alt="" class="color">
+						<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/425028/chip/goods_09_425028_chip.jpg"
+							alt="" class="color">
+						<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/425028/chip/goods_69_425028_chip.jpg"
+							alt="" class="color">
+					</div>
+					<div class="recommend-text">
+						<p class="recommend-type">男女兼用</p>
+						<p class="recommend-size">XS-4XL</p>
+					</div>
+					<h5 class="recommend-name">クールネックT（長袖）</h5>
+					<p class="recommend-price">¥1,290</p>
+					<p class="recommend-info">4月1日まで期間限定価格</p>
+					<div class="recommend-evaluation">
+						<span class="star5_rating" data-rate="4.5"></span>
+						(<a class="evaluation-num">2589</a>)
+					</div>
+				</div>
+				<div class="recommend-card">
+					<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/419503/item/goods_03_419503.jpg?width=552"
+						alt="" class="recommend-img">
+					<div class="recommend-colors">
+						<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/419503/chip/goods_02_419503_chip.jpg"
+							alt="" class="color">
+						<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/419503/chip/goods_03_419503_chip.jpg"
+							alt="" class="color">
+						<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/419503/chip/goods_09_419503_chip.jpg"
+							alt="" class="color">
+					</div>
+					<div class="recommend-text">
+						<p class="recommend-type">男女兼用</p>
+						<p class="recommend-size">XS-4XL</p>
+					</div>
+					<h5 class="recommend-name">クールネックT（長袖）</h5>
+					<p class="recommend-price">¥1,290</p>
+					<p class="recommend-info">4月1日まで期間限定価格</p>
+					<div class="recommend-evaluation">
+						<span class="star5_rating" data-rate="4.5"></span>
+						(<a class="evaluation-num">2589</a>)
+					</div>
+				</div>
+
+			</div>
+
 		</div>
 	</section>
 
@@ -329,6 +420,10 @@
 			</div>
 		</section>
 	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="./js/style.js"></script>
+
 </body>
 
 </html>
