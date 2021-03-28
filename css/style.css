@@ -3,9 +3,9 @@
     margin: 0px;
 }
 
-a {
-    /* text-decoration: none; */
-}
+/* a {
+    text-decoration: none;
+} */
 ul {
     list-style: none;
 }
@@ -58,6 +58,12 @@ ul {
     font-weight: bold;
     text-decoration: none;
 }
+.header-kids-btn-underline {
+    padding-bottom: 4px;
+}
+.header-kids-btn-underline:hover {
+    border-bottom: 1px solid black;
+}
 .header-search {
     margin-right: 30px;
 }
@@ -84,9 +90,7 @@ ul {
     text-decoration: none;
     /* width: 1.5rem; */
 }
-.fa-memory {
-    /* width: 1.5rem; */
-}
+
 /* .search-input{
   box-sizing: border-box;
   border: 1px black solid;
@@ -150,7 +154,11 @@ ul {
     justify-content: center;
     align-items: center;
   }
-  
+  .search-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
   /*---------------------------------
   menu-wrapper
 ---------------------------------*/
@@ -206,14 +214,13 @@ ul {
 .category-btns {
     padding-bottom: 32px;
 }
-
 .category-btn {
     color: black;
     text-decoration: none;
     font-size: 13px;
     height: 44px;
     width: 44px;
-    
+    padding-right: 5px;
 }
 
 /* .category-btn_1, .category-btn_2 {
@@ -254,6 +261,14 @@ ul {
     color: black;
     text-decoration: none;
     font-size: 20px;
+    height: 60px;
+}
+.kinds-tab-btn-underline {
+    padding-bottom: 4px;
+}
+
+.kinds-tab-btn-underline:hover {
+    border-bottom: 2px solid #1b1b1b;
 }
 
 /*---------------------------------
@@ -275,28 +290,47 @@ product-wrapper
     color: black;
     text-decoration: none;
     padding: 8px;
+    font-size: 15px;
+    color: gray;
 }
 .product-cards {
     display: flex;
     flex-wrap: wrap;
 }
 .product-card {
-    padding: 20px;
+    padding: 12px;
     /* border: black 1px solid; */
     width: 200px;
 }
-.product-text {
+.product-img {
+    width: 201px;
+    padding-bottom: 16px;
+}
+.color {
+    width: 13px;
+}
+.product-text, .recommend-text {
     display: flex;
     justify-content: space-between;
+    font-size: 11px;
+    color: gray;
+    padding-top: 8px 0 8px 0;
 }
-.product-name {
+.product-name, .recommend-name {
     margin: 5px 0;
+    font-size: 15px;
+    font-weight: normal;
+    padding-bottom: 8px;
 }
-.product-price {
+.product-price, .recommend-price {
     color: red;
+    margin-bottom: 4px;
+    font-size: 20px;
+    font-weight: bold;
 }
-.product-info {
+.product-info, .recommend-info {
     color: red;
+    font-size: 13px;
 }
 .star5_rating{
     position: relative;
@@ -333,7 +367,7 @@ product-wrapper
 .star5_rating[data-rate="0.5"]:after{ width: 10%; } /* 星0.5 */
 .star5_rating[data-rate="0"]:after{ width: 0%; } /* 星0 */
 
-.product-evaluation {
+.product-evaluation, .recommend-evaluation {
     display: flex;
 }
 
@@ -343,14 +377,26 @@ product-wrapper
 /*---------------------------------
 recommend-wrapper
 ---------------------------------*/
+.recommend-wrapper {
+    margin-bottom: 52px;
+}
 .recommend-cards {
     display: flex;
     flex-wrap: wrap;
 }
+.recommend-heading {
+    font-size: 30px;
+}
 .recommend-card {
-    padding: 20px;
+    padding-right: 20px;
     /* border: black 1px solid; */
-    width: 200px;
+    width: 276px;
+}
+.recommend-img {
+    width: 100%;
+}
+.recommend-colors {
+    padding-top: 16px;
 }
 .recommend-text {
     display: flex;
@@ -367,23 +413,46 @@ recommend-wrapper
 footer
 ---------------------------------*/
 .footer {
-    background-color: gray;
-    padding: 50px 0;
+    background-color: #F4F4F4;
+    padding: 32px 0;
 }
-.footer-btn, .footer-onlinestores-btn {
+.footer-btns {
+    height: 155px;
+    margin-bottom: 24px;
+}
+.footer-info-btn, .footer-onlinestores-btn {
     text-decoration: none;
-    color: black;
-    padding: 10px;
+    color: gray;
+    padding: 0 16px;
+    font-size: 13px;
+    margin-bottom: 16px;
 }
 .footer-onlinestores-btns {
     display: flex;
     margin-top: 30px;
 }
+.border-right {
+    border-right: 1px solid black;
+}
 .copylight {
-    border-top: black 1px solid;
-    padding-top: 30px;
+    border-top: #dadada 1px solid;
+    /* padding-top: 30px; */
 }
 .sns-btns {
     display: flex;
     justify-content: flex-end;
+}
+h6 {
+    font-size: 15px;
+}
+.copylight {
+    padding-top: 24px;
+}
+small {
+    font-size: 13px;
+    color: gray;
+}
+.sns-btn {
+    font-size: 40px;
+    margin: 0 16px 16px 0;
 }
