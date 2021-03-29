@@ -330,6 +330,7 @@ product-wrapper
 
 .product-container {
     display: flex;
+    flex-direction: row;
 }
 .side-bar {
     width: 250px;
@@ -387,8 +388,12 @@ product-wrapper
 }
 .product-card {
     padding: 12px;
-    /* border: black 1px solid; */
+    border: 1px solid white; 
     width: 200px;
+}
+.product-card:hover {
+    /* display: block; */
+    border: 1px solid black;
 }
 .product-img {
     width: 201px;
@@ -462,6 +467,29 @@ product-wrapper
 .evaluation-num {
     text-decoration: underline;
 }
+/* .dli-plus {
+    display: inline-block;
+    vertical-align: middle;
+    color: #333;
+    line-height: 1;
+    width: 1em;
+    height: 0.1em;
+    background: currentColor;
+    border-radius: 0.1em;
+    position: relative;
+  }
+  
+  .dli-plus::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: inherit;
+    transform: rotate(90deg);
+  }
 .toggle_contents {
 	border: 2px solid #d9d9d9;
 }
@@ -469,7 +497,7 @@ product-wrapper
 	position: relative;
 	padding: 15px;
 	cursor: pointer;
-	font-size: 26px;
+	font-size: 15px;
 	text-align: center;
 	line-height: 1.4;
 }
@@ -507,7 +535,7 @@ product-wrapper
 }
 .toggle_contents dd {
 	display: none;
-}
+} */
 .panel {
     /* border: 1px solid #acac; */
     border-left: none;
@@ -520,7 +548,7 @@ product-wrapper
     /* background-color: #eee; */
     display: block;
     display: inline-block;
-    width: 100%;
+    width: 251px;
     /* border: 1px solid #acac; */
   }
   .btn{
@@ -643,12 +671,23 @@ product-wrapper
 .sidebar-size-btn-num:hover {
     border: 1px black solid;
 }
-.
+.show-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.show-more-btn {
+    text-decoration: underline;
+    color: black;
+    font-size: 13px;
+}
 /*---------------------------------
 recommend-wrapper
 ---------------------------------*/
 .recommend-wrapper {
     margin-bottom: 52px;
+    padding-top: 30px;
 }
 .recommend-cards {
     display: flex;
@@ -656,6 +695,7 @@ recommend-wrapper
 }
 .recommend-heading {
     font-size: 30px;
+    margin-bottom: 24px;
 }
 .recommend-card {
     padding-right: 20px;
@@ -700,6 +740,7 @@ footer
 .footer-onlinestores-btns {
     display: flex;
     margin-top: 30px;
+    padding-left: 16px;
 }
 .border-right {
     border-right: 1px solid black;
@@ -726,3 +767,45 @@ small {
     font-size: 40px;
     margin: 0 16px 16px 0;
 }
+
+
+
+
+
+.plus-minus {
+    display: block;
+    position: relative;
+  }
+  
+  /* 二本の横棒を作成する */
+  .plus-minus::before,
+  .plus-minus::after {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 3px;
+    border-radius: 5px;
+    background: blue;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .plus-minus::after {
+    background: red;
+    /* 横棒を縦にするために90℃回転させる */
+    /* transform: translateY(-50%) rotate(90deg); */
+    /* プラスからマイナスへの切り替えをゆっくり行いアニメーションさせる */
+    transition: 0.5s;
+    
+  }
+  
+  /*
+  プラスがクリックされたら縦棒を横にしてマイナスにする疑似要素
+  jQueryで付け外しを行う
+  */
+  .active::after {
+    transform: rotate(0);
+    transition: 0.5s;
+    display: none;
+  }

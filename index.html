@@ -138,7 +138,7 @@
 	<section class="product-wrapper">
 		<div class="inner">
 			<div class="product-container">
-				<!-- <div class="side-bar"> -->
+				<div class="side-bar">
 					<!-- <div class="condition-bar">
 						<a href="" class="condition-btn">カテゴリー</a>
 						<a href="" class="condition-btn">価格</a>
@@ -146,9 +146,10 @@
 						<a href="" class="condition-btn">カラー</a>
 						<a href="" class="condition-btn">その他の条件</a>
 					</div> -->
-					<!-- <div class="box">
+					<div class="box">
 
 						<button class="btn side-bar-btn">カテゴリー<i class="fas fa-plus"></i></button>
+						<button class="btn side-bar-btn">カテゴリー<span class="plus-minus"></span></button>
 						<div class="panel">
 							<ul>
 								<li class="category-lists">
@@ -245,12 +246,12 @@
 								</li>
 							</ul>
 						</div>
-						<button class="btn side-bar-btn">その他の条件<span class="toggle_btn">開く</span></button>
+						<button class="btn side-bar-btn">その他の条件<i class="fas fa-plus"></i></button>
 						<div class="panel">
 							<p class="sidebar-otherconditions-msg">フィルタ―は使用できません</p>
 						</div>
-					</div> -->
-					<dl class="toggle_contents">
+					</div>
+					<!-- <dl class="toggle_contents btn side-bar-btn">
 						<dt class="toggle_title">メインメニュー01<span class="toggle_btn">開く</span></dt>
 						<dd>
 							<ul>
@@ -279,7 +280,7 @@
 								<li><a href="#">サブメニュー03</a></li>
 							</ul>
 						</dd>
-					</dl>
+					</dl> -->
 				</div>
 				<div class="product-cards">
 					<div class="product-card">
@@ -366,6 +367,9 @@
 							(<a class="evaluation-num">2589</a>)
 						</div>
 					</div>
+					<div class="show-more">
+						<a href="#" class="show-more-btn">もっと見る</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -376,7 +380,7 @@
 			<!-- <div class="recommend-heading"> -->
 			<h1 class="recommend-heading">おすすめ商品</h1>
 			<!-- </div> -->
-			<div class="recommend-cards">
+			<div class="recommend-cards slider">
 				<div class="recommend-card">
 					<img src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/433046/item/goods_32_433046.jpg?width=552"
 						alt="" class="recommend-img">
@@ -505,9 +509,21 @@
 		</section>
 	</footer>
 
+		
+	<!-- <div class="your-class">
+		<div>your content</div>
+		<div>your content</div>
+		<div>your content</div>
+	</div> -->
+	  
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="./js/style.js"></script>
-
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
 </body>
 
 </html>

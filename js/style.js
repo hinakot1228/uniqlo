@@ -11,11 +11,6 @@ for(i = 0; i < btn.length; i++) {
   })
 }
 
-// var sideBarBtn = document.getElementsByClassName("side-bar-btn");
-// sideBarBtn.addEventListener('click', function() {
-//   this.style.color = 'pink';
-// }, false)
-
 $(function(){
 	$('.toggle_title').click(function(){
 		$(this).toggleClass('selected');
