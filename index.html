@@ -138,7 +138,7 @@
 	<section class="product-wrapper">
 		<div class="inner">
 			<div class="product-container">
-				<div class="side-bar">
+				<!-- <div class="side-bar"> -->
 					<!-- <div class="condition-bar">
 						<a href="" class="condition-btn">カテゴリー</a>
 						<a href="" class="condition-btn">価格</a>
@@ -146,9 +146,9 @@
 						<a href="" class="condition-btn">カラー</a>
 						<a href="" class="condition-btn">その他の条件</a>
 					</div> -->
-					<div class="box">
-						<!---->
-						<button class="btn">カテゴリー<i class="fas fa-plus"></i></button>
+					<!-- <div class="box">
+
+						<button class="btn side-bar-btn">カテゴリー<i class="fas fa-plus"></i></button>
 						<div class="panel">
 							<ul>
 								<li class="category-lists">
@@ -161,41 +161,125 @@
 								</li>
 							</ul>
 						</div>
-						<!---->
-						<button class="btn">価格<i class="fas fa-plus"></i></button>
-						<div class="panel">
-							<h2>About</h2>
+
+						<button class="btn side-bar-btn">価格<i class="fas fa-plus"></i></button>
+						<div class="panel price-panel">
+							<div class="price-panel-index">
+								<input id="490" type="checkbox" name="490" value="490">
+								<label
+								for="490">～¥490</label>
+							</div>
+							<div class="price-panel-index">
+								<input id="990" type="checkbox" name="990" value="990">
+								<label
+								for="990">～¥990</label>
+							</div>
+							<div class="price-panel-index">
+								<input id="1990" type="checkbox" name="1990" value="1990">
+								<label
+								for="1990">～¥1,990</label>
+							</div>
 						</div>
-						<!---->
-						<button class="btn">サイズ<i class="fas fa-plus"></i></button>
+
+						<button class="btn side-bar-btn">サイズ<i class="fas fa-plus"></i></button>
 						<div class="panel">
-							<h2>Menu</h2>
+							
+							<div class="sidebar-size-list1">
+								<div class="sidebar-size-btn xs">
+									XS
+								</div>
+								<div class="sidebar-size-btn s">
+									S
+								</div>
+								<div class="sidebar-size-btn m">
+									M
+								</div>
+								<div class="sidebar-size-btn l">
+									L
+								</div>
+								<div class="sidebar-size-btn xl">
+									XL
+								</div>
+								<div class="sidebar-size-btn xxl">
+									XXL
+								</div>
+								<div class="sidebar-size-btn 3xl">
+									3XL
+								</div>
+								<div class="sidebar-size-btn 4xl">
+									4XL
+								</div>
+							</div>
+							<div class="sidebar-size-list2">
+								<div class="sidebar-size-btn-num">
+									27
+								</div>
+								<div class="sidebar-size-btn-num">
+									28
+								</div>
+								<div class="sidebar-size-btn-num">
+									29
+								</div>
+								<div class="sidebar-size-btn-num">
+									30
+								</div>
+							</div>
 						</div>
-						<!---->
-						<button class="btn">カラー<i class="fas fa-plus"></i></button>
+
+						<button class="btn side-bar-btn">カラー<i class="fas fa-plus"></i></button>
 						<div class="panel">
 							<ul>
 								<li>
 									<div class="condition-color-item">
 										<div class="condition-color white"></div>
-										<p>White</p>
+										<a class="condition-color-name">White</a>
 									</div>
 									<div class="condition-color-item">
 										<div class="condition-color gray"></div>
-										<p>Gray</p>
+										<a class="condition-color-name">Gray</a>
 									</div>
 									<div class="condition-color-item">
 										<div class="condition-color black"></div>
-										<p>Black</p>
+										<a class="condition-color-name">Black</a>
 									</div>
 								</li>
 							</ul>
 						</div>
-						<button class="btn">その他の条件<i class="fas fa-plus"></i></button>
+						<button class="btn side-bar-btn">その他の条件<span class="toggle_btn">開く</span></button>
 						<div class="panel">
-							<p>フィルタ―は使用できません</p>
+							<p class="sidebar-otherconditions-msg">フィルタ―は使用できません</p>
 						</div>
-					</div>
+					</div> -->
+					<dl class="toggle_contents">
+						<dt class="toggle_title">メインメニュー01<span class="toggle_btn">開く</span></dt>
+						<dd>
+							<ul>
+								<li><a href="#">サブメニュー01</a></li>
+								<li><a href="#">サブメニュー02</a></li>
+								<li><a href="#">サブメニュー03</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="toggle_contents">
+						<dt class="toggle_title">メインメニュー02<span class="toggle_btn">開く</span></dt>
+						<dd>
+							<ul>
+								<li><a href="#">サブメニュー01</a></li>
+								<li><a href="#">サブメニュー02</a></li>
+								<li><a href="#">サブメニュー03</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="toggle_contents">
+						<dt class="toggle_title">メインメニュー03<span class="toggle_btn">開く</span></dt>
+						<dd>
+							<ul>
+								<li><a href="#">サブメニュー01</a></li>
+								<li><a href="#">サブメニュー02</a></li>
+								<li><a href="#">サブメニュー03</a></li>
+							</ul>
+						</dd>
+					</dl>
 				</div>
 				<div class="product-cards">
 					<div class="product-card">
