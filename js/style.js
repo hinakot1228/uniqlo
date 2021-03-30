@@ -17,3 +17,17 @@ $(function(){
 		$(this).next().slideToggle();
 	});
 });
+
+$(function(){
+  $('.single-item').slick({
+    // accessibility: true,
+    autoplay: false,
+    autoplaySpeed: 1000,
+    dots: true,
+    // fade: true,
+    slidesToShow:4,
+    slidesToScroll:4
+  });
+});
+
+

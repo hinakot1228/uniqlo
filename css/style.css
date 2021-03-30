@@ -27,9 +27,13 @@ ul {
     /* justify-content: space-between; */
     background-color: #FFFFFF;
     /* height: 50px; */
-    width: 100vw;
+    /* width: 100vw; */
     border-bottom: 1px solid #dadada;
     padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
   
 }
 .header-container {
@@ -167,8 +171,15 @@ ul {
     margin: 30px 0;
     border-bottom: 1px #ccc solid;
     padding-bottom: 16px;
-    display: none;
+    display: block;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
 }
+  
+  .header--unpinned {
+    -webkit-transform: translateY(-150%);
+    transform: translateY(-150%);
+  }
 .menu-container {
       display: flex;
       justify-content: space-between;
@@ -259,6 +270,7 @@ ul {
   top-wrapper
 ---------------------------------*/
 .top-wrapper {
+    margin-top: 88px;
     padding-top: 50px;
 }
 .category-btns {
@@ -707,6 +719,10 @@ recommend-wrapper
 }
 .recommend-colors {
     padding-top: 16px;
+    display: flex;
+}
+.color {
+    margin-right: 6px;
 }
 .recommend-text {
     display: flex;
@@ -808,4 +824,18 @@ small {
     transform: rotate(0);
     transition: 0.5s;
     display: none;
+  }
+
+  .container {
+    margin: 0 auto;
+    padding: 40px;
+    width: 100%;
+    color: #333;
+    background: white;
+  }
+  
+  .slick-slide {
+    text-align: center;
+    color: #419be0;
+    background: white;
   }
