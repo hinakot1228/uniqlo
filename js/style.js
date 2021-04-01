@@ -45,3 +45,29 @@ $(function(){
 		$(this).next().slideToggle();
 	});
 });
+
+// ハンバーガーメニュー
+$(function() {
+  $('.hamburger, .hamburger2').click(function() {
+      $(this).toggleClass('active');
+
+      if ($(this).hasClass('active')) {
+          $('.globalMenuSp').addClass('active');
+      } else {
+          $('.globalMenuSp').removeClass('active');
+      }
+  });
+});
+
+// ハンバーガーメニューのボタンを押すと「アカウントボタン」が消え、「閉じるボタン」が表れる
+var hamburger2 = document.getElementById("hamburger2");
+document.getElementById("hamburger").onclick = function() {
+  this.classList.toggle("hamburger-close");
+  hamburger2.classList.toggle("hamburger2-open");
+};
+// ハンバーガーメニューのボタンを押すと「閉じるボタン」が表れる
+var hamburger = document.getElementById("hamburger");
+document.getElementById("hamburger2").onclick = function() {
+  this.classList.toggle("hamburger2-close");
+  hamburger.classList.toggle("hamburger-open");
+};
