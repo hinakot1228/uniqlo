@@ -267,6 +267,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  visibility: visible;
   /* background-color: #fff; */
 }
 .hamburger span {
@@ -284,7 +285,7 @@ ul {
     display: inline-block;
     font-size: 10px;
 }
-.hamburger-close {
+/* .hamburger-close {
     display: none;
 }
 .hamburger-open {
@@ -295,20 +296,26 @@ ul {
 }
 .hamburger2.hamburger2-close {
     visibility: hidden;
-}
+} */
 .hamburger2 {
     visibility: hidden;
     position: fixed;
     z-index : 3;
     right : 13px;
     top   : 12px;
-  width : 42px;
-  height: 42px;
+    width : 42px;
+    height: 42px;
     cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hamburger2.show-btn {
+    visibility: visible;
+}
+.hamburger.hide-btn {
+    visibility: hidden;
 }
 nav.globalMenuSp {
   position: fixed;
