@@ -45,3 +45,61 @@ $(function(){
 		$(this).next().slideToggle();
 	});
 });
+
+// ハンバーガーメニュー
+$(function() {
+  $('.hamburger').click(function() {
+      $(this).addClass('active');
+      
+      if ($(this).hasClass('active')) {
+          $('.globalMenuSp').addClass('active');
+      }
+       else {
+          $('.globalMenuSp').removeClass('active');
+      }
+
+      $(this).addClass('hide-btn');
+      $('.hamburger2').addClass('show-btn');
+  });
+});
+$(function() {
+  $('.hamburger2').click(function() {
+      $(this).removeClass('active');
+      
+      if 
+      ($(this).hasClass('active')) {
+          $('.globalMenuSp').addClass('active');
+      } 
+      else
+       {
+          $('.globalMenuSp').removeClass('active');
+      }
+
+      $(this).removeClass('show-btn');
+      $('.hamburger').removeClass('hide-btn');
+  });
+});
+
+// $(function() {
+//   $('.hamburger').click(function() {
+//       $(this).toggleClass('show-btn');
+
+      
+//   });
+// });
+
+
+
+// ハンバーガーメニューのボタンを押すと「アカウントボタン」が消え、「閉じるボタン」が表れる
+// var hamburger2 = document.getElementById("hamburger2");
+// document.getElementById("hamburger").onclick = function() {
+//   this.classList.toggle("hamburger-close");
+//   hamburger2.classList.toggle("hamburger2-open");
+// };
+// ハンバーガーメニューのボタンを押すと「閉じるボタン」が表れる
+// var hamburger = document.getElementById("hamburger");
+// document.getElementById("hamburger2").onclick = function() {
+//   this.classList.toggle("hamburger2-close");
+//   hamburger.classList.toggle("hamburger-open");
+// };
+
