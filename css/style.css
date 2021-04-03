@@ -355,6 +355,44 @@ nav.globalMenuSp.active {
 
 
 }
+
+  /*---------------------------------
+  menu-nav sp
+---------------------------------*/
+.menu-nav {
+    margin-top: 50px;
+}
+.menu-nav-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    height: 60px;
+    margin: 0px;
+}
+.menu-nav-btn{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+}
+.menu-nav-btns li {
+    height: 60px;
+    border-right: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-nav-btn.men {
+    border-bottom: 1px solid blue;
+}
+.menu-nav-btn-list.women, .menu-nav-btn-list.kids, .menu-nav-btn-list.baby {
+    background-color: rgb(185, 175, 175);
+}
+/* .menu-nav-btn.women, .menu-nav-btn.kids, .menu-nav-btn.baby { */
+    /* background-color: gray; */
+    /* border-bottom: 1px solid gray; */
+/* } */
   /*---------------------------------
   menu-wrapper
 ---------------------------------*/
