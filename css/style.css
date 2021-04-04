@@ -494,6 +494,51 @@ nav.globalMenuSp.active {
     /* These hacks make the select behind the arrow clickable in some browsers */
     pointer-events:none;
   }
+  @media only screen and (max-width: 480px) {
+      .display-menu {
+        display: none;
+    }
+      .sorting-menu {
+          display: none;
+      }
+      .menu-items {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          height: 70px;
+          border-top: 1px solid gray;
+          border-bottom: 1px solid gray;
+          margin: 0;
+          padding: 0;
+      }
+      .menu-item-num {
+          height: 100%;
+          width: 50%;
+          border-right: 1px solid gray;
+          display: flex;
+          align-items: center;
+          padding: 0 4vw;
+      }
+      .menu-item-others {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          color: black;
+          text-decoration: none;
+          width: 66px;
+          height: 100%;
+      }
+      .menu-item-others span {
+          font-size: 11px;
+      }
+      .menu-item-others.display, .menu-item-others.sorting {
+          border-right: 1px solid gray;
+      }
+      .menu-items li{
+          height: 100%;
+      }
+  }
  
   /*---------------------------------
   top-wrapper
@@ -876,7 +921,7 @@ product-wrapper
 }
 
 @media only screen and (max-width: 480px) {
-    .product-wrapper.inner {
+    .inner {
         width: 100%;
         margin: 0 auto;
     }
