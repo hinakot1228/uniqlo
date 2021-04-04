@@ -495,8 +495,20 @@ nav.globalMenuSp.active {
     pointer-events:none;
   }
   @media only screen and (max-width: 480px) {
-      .display-menu {
-        display: none;
+    /* .display-menu {
+        visibility: hidden;
+    } */
+    /* .display-menu.show {
+        visibility: visible;
+    } */
+    .display-menu-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+        width: 68px;
+        border: 1px solid gray;
     }
       .sorting-menu {
           display: none;
@@ -535,9 +547,10 @@ nav.globalMenuSp.active {
       .menu-item-others.display, .menu-item-others.sorting {
           border-right: 1px solid gray;
       }
-      .menu-items li{
+      .menu-items div{
           height: 100%;
       }
+
   }
  
   /*---------------------------------

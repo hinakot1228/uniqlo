@@ -144,3 +144,12 @@ $(function() {
       return false;
   });
 });
+
+/*---------------------------------
+  モバイル画面のメニュー
+---------------------------------*/
+$(function() {
+  $('.menu-item-display, .menu-item-sorting, .menu-item-narrow').click(function() {
+    $(this).nextAll().toggleClass('show');
+  });
+});
