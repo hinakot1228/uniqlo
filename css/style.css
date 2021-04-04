@@ -952,7 +952,7 @@ footer
 ---------------------------------*/
 .footer {
     background-color: #F4F4F4;
-    padding: 50px 0;
+    padding: 32px 0;
 }
 .footer-btns {
     height: 155px;
@@ -997,6 +997,9 @@ small {
 }
 
 @media only screen and (max-width: 480px) {
+    .footer {
+        padding: 50px 0;
+    }
     .footer-info-btns {
         display: flex;
         flex-direction: column;
