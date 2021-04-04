@@ -79,6 +79,10 @@ $(function() {
 /*---------------------------------
   PC画面のサイドバー「＋」「―」のボタン切り替え
 ---------------------------------*/
+/*---------------------------------
+  モバイル画面のフッター「↑」「↓」のボタン切り替え
+---------------------------------*/
+
 $(function() {
   $('.side-bar-btn').click(function() {
     var category = $(this).hasClass('category-btn');
@@ -86,6 +90,7 @@ $(function() {
     var size = $(this).hasClass('size-btn');
     var color = $(this).hasClass('color-btn');
     var others = $(this).hasClass('others-btn');
+    var footer = $(this).hasClass('footer-btn');
 
     if(category) {
       $(".category-btn").find('.fa-plus').toggleClass('hide-btn');
@@ -107,5 +112,13 @@ $(function() {
       $(".others-btn").find('.fa-plus').toggleClass('hide-btn');
       $(".others-btn").find('.fa-minus').toggleClass('show-btn');
     }
+    else if(footer) {
+      $(".footer-btn").find('.fa-chevron-down').toggleClass('hide-btn');
+      $(".footer-btn").find('.fa-chevron-up').toggleClass('show-btn');
+    }
   });
 });
+
+/*---------------------------------
+  モバイル画面のフッター「↑」「↓」のボタン切り替え
+---------------------------------*/

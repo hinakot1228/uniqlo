@@ -996,6 +996,46 @@ small {
     margin: 0 16px 16px 0;
 }
 
+@media only screen and (max-width: 480px) {
+    .footer-info-btns {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-btns {
+        height: auto;
+    }
+    .border-right {
+        border-right: 0px;
+    }
+    .footer-info-btn {
+        color: black;
+        border-bottom: 1px solid gray;
+        padding: 10px;
+    }
+    .sns-btns {
+        display: flex;
+        flex-direction: column;
+    }
+    .fa-chevron-up {
+        visibility: hidden;
+    }
+    .fa-chevron-down {
+        visibility: visible;
+    }
+    .fa-chevron-up.show-btn {
+        visibility: visible;
+    }
+    .fa-chevron-down.hide-btn {
+        visibility: hidden;
+    }
+    .footer-onlinestores-btns {
+        display: flex;
+        flex-direction: column;
+    }
+    .copylight {
+        text-align: center;
+    }
+}
 
 
 
