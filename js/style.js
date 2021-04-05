@@ -149,7 +149,20 @@ $(function() {
   モバイル画面のメニュー
 ---------------------------------*/
 $(function() {
-  $('.menu-item-display, .menu-item-sorting, .menu-item-narrow').click(function() {
+  $('.menu-item-display').click(function() {
     $(this).nextAll().toggleClass('show');
   });
 });
+$(function() {
+  $('.menu-item-sorting-btn').click(function() {
+    $('.sorting-menu').toggleClass('show');
+  });
+});
+
+
+
+// $(function() {
+//   $('.menu-item-display').click(function() {
+//     $(this).nextAll().show();
+//   });
+// });

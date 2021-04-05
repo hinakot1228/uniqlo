@@ -495,12 +495,31 @@ nav.globalMenuSp.active {
     pointer-events:none;
   }
   @media only screen and (max-width: 480px) {
-    /* .display-menu {
-        visibility: hidden;
-    } */
-    /* .display-menu.show {
-        visibility: visible;
-    } */
+    .menu-wrapper-sp {
+        position: relative;
+    }
+    .display-menu, .sorting-menu {
+        display: none;
+        background-color: #fff;
+    }
+    .display-menu.show, .sorting-menu.show {
+        display: inline-block;
+        z-index: 10000;
+    }
+    .sorting-menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+    }
+    .sorting-menu button {
+        width: 90%;
+        background-color: black;
+        color: white;
+    }
+    .menu-item-display-btn, .menu-item-sorting-btn {
+        position: relative;
+    }
     .display-menu-btn {
         display: flex;
         flex-direction: column;
@@ -510,9 +529,6 @@ nav.globalMenuSp.active {
         width: 68px;
         border: 1px solid gray;
     }
-      .sorting-menu {
-          display: none;
-      }
       .menu-items {
           display: flex;
           justify-content: space-around;
@@ -1234,3 +1250,7 @@ small {
 .toggle_contents dd {
 	display: none;
 }
+
+
+
+
