@@ -178,11 +178,15 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-left: 1px solid gray;
   }
   .search-btn {
       display: flex;
       justify-content: center;
       align-items: center;
+  }
+  .search-btn-box {
+      /* border-left: 1px solid gray; */
   }
   @media only screen and (max-width: 480px) {
     /* header {
@@ -1055,7 +1059,10 @@ footer
 ---------------------------------*/
 .footer {
     background-color: #F4F4F4;
-    padding: 32px 0;
+    padding: 27px 0;
+}
+.footer-inner {
+    margin: 0 75.5px;
 }
 .footer-btns {
     height: 155px;
@@ -1064,31 +1071,31 @@ footer
 .footer-info-btn, .footer-onlinestores-btn {
     text-decoration: none;
     color: gray;
-    padding: 0 16px;
+    padding: 0 13px;
     font-size: 13px;
     margin-bottom: 16px;
 }
 .footer-onlinestores-btns {
     display: flex;
-    margin-top: 30px;
-    padding-left: 16px;
+    margin-top: 21px;
+    padding-left: 10px;
+    font-size: 15px;
 }
 .border-right {
     border-right: 1px solid black;
 }
 .copylight {
     border-top: #dadada 1px solid;
+    padding: 22px 0 0 11px;
     /* padding-top: 30px; */
 }
 .sns-btns {
     display: flex;
     justify-content: flex-end;
+    height: 40px;
 }
 h6 {
     font-size: 15px;
-}
-.copylight {
-    padding-top: 24px;
 }
 small {
     font-size: 13px;
@@ -1097,6 +1104,12 @@ small {
 .sns-btn {
     font-size: 40px;
     margin: 0 16px 16px 0;
+    height: 40px;
+    display: inherit
+}
+.sns-btn i {
+    width: 100%;
+    box-sizing: border-box;
 }
 
 @media only screen and (max-width: 480px) {
