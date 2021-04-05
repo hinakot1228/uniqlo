@@ -1020,7 +1020,17 @@ recommend-wrapper
 .recommend-info {
     color: red;
 }
-
+/*---------------------------------
+category-wrapper
+---------------------------------*/
+@media only screen and (max-width: 480px) {
+    .category-wrapper-sp {
+        padding: 10px;
+    }
+    .category-btns-sp {
+        color: black;
+    }
+}
 /*---------------------------------
 footer
 ---------------------------------*/
