@@ -258,13 +258,19 @@ ul {
 ---------------------------------*/
 .header-sp {
     display: flex;
+    justify-content: space-around;
     z-index: 10000;
     height: 70px;
     width: 100%;
-    position: fixed;
+    /* position: fixed;
     top: 0;
-    left: 0;
-    border-bottom: 1px solid gray;
+    left: 0; */
+    border-bottom: 1px solid #dadada;
+    background-color: #fff;
+    padding: 15px 16px;
+}
+.header-logo-sp {
+    width: 90px;
 }
 /*　ハンバーガーボタン　*/
 .hamburger {
@@ -285,10 +291,10 @@ ul {
 }
 .hamburger span {
   display : inline-block;
-  position: absolute;
+  /* position: absolute; */
   /* width   : 30px;
   height  : 2px ; */
-  left    : 6px;
+  /* left    : 6px; */
   /* background : #555;
   -webkit-transition: 0.3s ease-in-out;
   -moz-transition   : 0.3s ease-in-out;
@@ -296,7 +302,7 @@ ul {
 }
 .header-accont-btn-text {
     display: inline-block;
-    font-size: 10px;
+    font-size: 11px;
 }
 .hamburger2 {
     visibility: hidden;
@@ -358,22 +364,23 @@ nav.globalMenuSp ul li a {
   padding: 24px 17px;
   text-decoration :none;
   font-size: 14px;
+  font-weight: bold;
 }
 
 /* このクラスを、jQueryで付与・削除する */
 nav.globalMenuSp.active {
-  transform: translateY(20%);
+  transform: translateY(17%);
 }
 
 
 
 }
 
-  /*---------------------------------
+/*---------------------------------
   menu-nav sp
 ---------------------------------*/
 .menu-nav {
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 .menu-nav-btns {
     display: flex;
@@ -386,21 +393,23 @@ nav.globalMenuSp.active {
 .menu-nav-btn{
     text-decoration: none;
     color: black;
-    padding: 10px;
+    padding: 3.5px;
     margin: 10px;
+    font-weight: bold;
 }
 .menu-nav-btns li {
     height: 60px;
-    border-right: 1px solid gray;
+    border-right: 1px solid #dadada;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .menu-nav-btn.men {
-    border-bottom: 1px solid blue;
+    border-bottom: 2px solid #378694;
 }
 .menu-nav-btn-list.women, .menu-nav-btn-list.kids, .menu-nav-btn-list.baby {
-    background-color: rgb(185, 175, 175);
+    background-color: #F4F4F4;
 }
 /* .menu-nav-btn.women, .menu-nav-btn.kids, .menu-nav-btn.baby { */
     /* background-color: gray; */
@@ -524,10 +533,26 @@ nav.globalMenuSp.active {
     .display-menu, .sorting-menu {
         display: none;
         background-color: #fff;
+        position: relative;
+        left: -2px;
+    }
+    .display-menu-btn span {
+        font-size: 11px;
+    }
+    .display-menu-btn i{
+        height: 24px;
+        width: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4px 0;
     }
     .display-menu.show, .sorting-menu.show {
         display: inline-block;
         z-index: 10000;
+    }
+    .menu-item-others i {
+        margin: 4px 0;
     }
     .sorting-menu {
         position: absolute;
@@ -535,10 +560,40 @@ nav.globalMenuSp.active {
         left: 0;
         width: 100%;
     }
-    .sorting-menu button {
+    .sorting-menu-btns {
+        margin: 21px 0 0 0;
+        padding: 0 17px;
+    }
+    .sorting-submit-btn {
+        margin: 36px 0 21px 0;
+    }
+    .sorting-menu-list input {
+        width: 24px;
+        height: 24px;
+    }
+    .sorting-menu-list {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .sorting-menu-list label {
+        font-size: 13px;
+        padding: 2.5px 0 0 6.5px;
+    }
+    .sorting-submit-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sorting-submit-btn button {
         width: 90%;
         background-color: black;
         color: white;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 8px 4px;
+        appearance: none;
+        border: none;
     }
     .menu-item-display-btn, .menu-item-sorting-btn {
         position: relative;
@@ -551,6 +606,7 @@ nav.globalMenuSp.active {
         height: 70px;
         width: 68px;
         border: 1px solid gray;
+        background-color: white;
     }
       .menu-items {
           display: flex;
@@ -627,7 +683,7 @@ nav.globalMenuSp.active {
 }
 @media only screen and (max-width: 480px) {
     .top-wrapper {
-        margin-top: 30px;
+        margin-top: 0;
         padding-top: 0;
         border-bottom: 1px solid gray;
     }
@@ -636,6 +692,23 @@ nav.globalMenuSp.active {
     }
     .heading {
         font-size: 20px;
+    }
+    .top-heading {
+        margin: 21px 16px;
+    }
+    .feature-btn {
+        margin: 9px 16px 0 9px;
+    }
+    .feature-btns {
+        margin-bottom: 9px;
+        font-weight: bold;
+    }
+    .menu-item-num {
+        font-weight: bold;
+        font-size: 11px;
+    }
+    .menu-item-num span {
+        font-size: 18px;
     }
 }
 
@@ -1032,14 +1105,16 @@ product-wrapper
     }
     .evaluation-num {
         color: black;
-    text-decoration: none;
+        text-decoration: none;
     }
     .show-more {
         padding: 20px;
         border-top: 1px solid gray;
         border-bottom: 1px solid gray;
     }
-    
+    .product-txt {
+        margin: 0 16.5px 21px;
+    }
 }
 
 /*---------------------------------
