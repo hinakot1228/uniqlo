@@ -4,8 +4,12 @@
     box-sizing: border-box;
 }
 
-/* a {
+a {
     text-decoration: none;
+    
+}
+/* button {
+    outline: none !important;
 } */
 ul {
     list-style: none;
@@ -170,7 +174,7 @@ ul {
     background: #fff;
     color: black;
     position: absolute;
-    width: 3.5em;
+    width: 44px;
     height: 3.0em;
     right:0px;
     top: -5px;
@@ -187,6 +191,7 @@ ul {
   }
   .search-btn-box {
       /* border-left: 1px solid gray; */
+      width: 44px;
   }
   @media only screen and (max-width: 480px) {
     /* header {
@@ -410,7 +415,7 @@ nav.globalMenuSp.active {
 }
 .menu-wrapper {
     margin: 51px 0 34px 0;
-    border-bottom: 1px #ccc solid;
+    /* border-bottom: 1px #ccc solid; */
     padding-bottom: 16px;
     display: block;
     -webkit-transform: translateY(0);
@@ -664,8 +669,17 @@ nav.globalMenuSp.active {
 .kinds-tab-btn-underline:hover {
     border-bottom: 2px solid #1b1b1b;
 }
-.side-bar-btn {
+#side-bar-btn {
     text-align: left;
+    font-size: 15px;
+    position: relative;
+    padding: 0;
+    height: 38px;
+}
+.side-bar-btn i {
+    position: absolute;
+    top: 11px;
+    right: 10px;
 }
 /* .side-bar-btn:active {
     font-weight: bold;
@@ -674,7 +688,9 @@ nav.globalMenuSp.active {
 /*---------------------------------
 product-wrapper
 ---------------------------------*/
-
+.product-wrapper {
+    margin-bottom: 52px;
+}
 .product-container {
     display: flex;
     flex-direction: row;
@@ -707,6 +723,7 @@ product-wrapper
 }
 .condition-color-item {
     display: flex;
+    align-items: center;
 }
 .condition-color {
     height: 16px;
@@ -715,6 +732,8 @@ product-wrapper
 }
 .condition-color-name {
     font-size: .9375rem;
+    text-decoration: none;
+    color: black;
 }
 .sidebar-otherconditions-msg {
     font-size: .9375rem;
@@ -761,16 +780,21 @@ product-wrapper
     height: 20px;
 }
 .product-name, .recommend-name {
-    margin: 5px 0;
+    /* margin: 5px 0; */
     font-size: 15px;
     font-weight: normal;
     padding-bottom: 8px;
+    text-align: left;
+    color: black;
+    padding-top: 8px;
 }
 .product-price, .recommend-price {
     color: red;
     margin-bottom: 4px;
     font-size: 20px;
     font-weight: bold;
+    text-align: left;
+    padding-top: 8px;
 }
 .product-info, .recommend-info {
     color: red;
@@ -784,6 +808,7 @@ product-wrapper
     white-space: nowrap;
     color: #CCCCCC; /* グレーカラー 自由に設定化 */
     /*font-size: 30px; フォントサイズ 自由に設定化 */
+    margin-right: 4px;
 }
 
 .star5_rating:before, .star5_rating:after{
@@ -814,18 +839,22 @@ product-wrapper
 
 .product-evaluation, .recommend-evaluation {
     display: flex;
+    color: black;
 }
 
 .evaluation-num {
-    text-decoration: underline;
+    color: black;
 }
 .panel {
     /* border: 1px solid #acac; */
     border-left: none;
     border-right:none;
     /* background-color: white; */
-    padding: 0 20px;
+    padding: 8px 20px 8px 0;
     display: none;
+  }
+  .panel ul {
+      padding: 0;
   }
   .box {
     /* background-color: #eee; */
@@ -833,24 +862,30 @@ product-wrapper
     display: inline-block;
     width: 251px;
     /* border: 1px solid #acac; */
+    height: 221px;
+    padding-right: 24px;
+    margin: 0 12px;
   }
   .btn{
     display: block;
     flex-grow: 1;
     width: 100%;
-    padding: 20px;
+    /* padding: 20px; */
     background-color: inherit;
     outline: none;
     border: none;
     cursor: pointer;
     text-align: left;
+
   }
   .fas {
     float: right;
   }
+
   .price-panel-index {
       margin-bottom: 12px;
       font-size: 15px;
+      /* padding: 8px 0; */
   }
   .price-panel-index label{
       color: #1b1b1b;
@@ -911,6 +946,10 @@ product-wrapper
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 16px;
+}
+.sidebar-size-list1 div {
+    width: 40px;
+    height: 40px;
 }
 .sidebar-size-btn {
     border: 1px #dadada solid;
@@ -1008,7 +1047,6 @@ recommend-wrapper
 ---------------------------------*/
 .recommend-wrapper {
     margin-bottom: 52px;
-    padding-top: 30px;
 }
 .recommend-cards {
     display: flex;
@@ -1019,7 +1057,7 @@ recommend-wrapper
     margin-bottom: 24px;
 }
 .recommend-card {
-    padding-right: 20px;
+    padding: 0 24px 10px 0;
     /* border: black 1px solid; */
     width: 276px;
 }
@@ -1036,12 +1074,14 @@ recommend-wrapper
 .recommend-text {
     display: flex;
     justify-content: space-between;
+    padding-top: 8px;
 }
 .recommend-price {
     color: red;
 }
 .recommend-info {
     color: red;
+    text-align: left;
 }
 /*---------------------------------
 category-wrapper
@@ -1245,7 +1285,7 @@ small {
 
   .container {
     margin: 0 auto;
-    padding: 40px;
+    /* padding: 40px; */
     width: 100%;
     color: #333;
     background: white;

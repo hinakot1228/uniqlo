@@ -41,6 +41,15 @@
     outline: none;
     background: transparent;
 }
+.slick-prev {
+    left:0!important;
+}
+.slick-next {
+    right: 20px !important;
+}
+.slick-arrow{
+    z-index:2!important;
+  }
 .slick-prev:hover,
 .slick-prev:focus,
 .slick-next:hover,
@@ -127,7 +136,7 @@
     display: block;
 
     width: 100%;
-    padding: 0;
+    /* padding-top: 12px; */
     margin: 0;
 
     list-style: none;
@@ -140,8 +149,8 @@
 
     display: inline-block;
 
-    width: 20px;
-    height: 20px;
+    width: 3px;
+    height: 3px;
     margin: 0 5px;
     padding: 0;
 
@@ -149,8 +158,8 @@
 }
 .slick-dots li button
 {
-    font-size: 0;
-    line-height: 0;
+    font-size: 100% !important;
+    line-height: 100% !important;
 
     display: block;
 
@@ -174,6 +183,7 @@
 .slick-dots li button:focus:before
 {
     opacity: 1;
+    color: black; /* hover時の色を変更 */
 }
 .slick-dots li button:before
 {
@@ -188,7 +198,9 @@
     width: 20px;
     height: 20px;
 
-    content: '•';
+    /* 元のcontentプロパティの値だとfont-sizeを変更した際に位置がずれてしまうので値を変更 */
+    /* content: '•'; */
+    content: '●';
     text-align: center;
 
     opacity: .25;
@@ -200,5 +212,6 @@
 .slick-dots li.slick-active button:before
 {
     opacity: .75;
-    color: black;
+    color: black; /* active時の色を変更 */
 }
+
