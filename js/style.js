@@ -31,6 +31,17 @@ $(function(){
     slidesToShow:4,
     slidesToScroll:4,
     arrows: true,
+
+    responsive: [{
+      breakpoint: 480,  //ブレイクポイントを指定
+      settings: {
+        slidesToShow:2.5,
+        slidesToScroll:2.5,
+        dots: false,
+        arrows: false,
+      }
+    }]
+
   });
 });
 

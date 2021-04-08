@@ -257,8 +257,9 @@ ul {
   header-hamberger-menu
 ---------------------------------*/
 .header-sp {
-    display: flex;
-    justify-content: space-around;
+    display: flex !important;;
+    justify-content: space-between;
+    align-items: center;
     z-index: 10000;
     height: 70px;
     width: 100%;
@@ -268,6 +269,7 @@ ul {
     border-bottom: 1px solid #dadada;
     background-color: #fff;
     padding: 15px 16px;
+    position: relative;
 }
 .header-logo-sp {
     width: 90px;
@@ -275,10 +277,7 @@ ul {
 /*　ハンバーガーボタン　*/
 .hamburger {
   /* display : inline-block; */
-  position: fixed;
   z-index : 3;
-  right : 13px;
-  top   : 12px;
   width : 42px;
   /* height: 42px; */
   cursor: pointer;
@@ -303,6 +302,7 @@ ul {
 .header-accont-btn-text {
     display: inline-block;
     font-size: 11px;
+    margin: 0;
 }
 .hamburger2 {
     visibility: hidden;
@@ -348,7 +348,7 @@ nav.globalMenuSp ul li {
   list-style-type: none;
   padding: 0;
   width: 100%;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #e7e7e7;
 }
 nav.globalMenuSp ul li:last-child {
   padding-bottom: 0;
@@ -605,7 +605,7 @@ nav.globalMenuSp.active {
         align-items: center;
         height: 70px;
         width: 68px;
-        border: 1px solid gray;
+        border: 1px solid #e0e0e0;
         background-color: white;
     }
       .menu-items {
@@ -613,15 +613,15 @@ nav.globalMenuSp.active {
           justify-content: space-around;
           align-items: center;
           height: 70px;
-          border-top: 1px solid gray;
-          border-bottom: 1px solid gray;
+          border-top: 1px solid #e0e0e0;
+          border-bottom: 1px solid #e0e0e0;
           margin: 0;
           padding: 0;
       }
       .menu-item-num {
           height: 100%;
           width: 50%;
-          border-right: 1px solid gray;
+          border-right: 1px solid #e0e0e0;
           display: flex;
           align-items: center;
           padding: 0 4vw;
@@ -640,7 +640,7 @@ nav.globalMenuSp.active {
           font-size: 11px;
       }
       .menu-item-others.display, .menu-item-others.sorting {
-          border-right: 1px solid gray;
+          border-right: 1px solid #e0e0e0;
       }
       .menu-items div{
           height: 100%;
@@ -685,7 +685,6 @@ nav.globalMenuSp.active {
     .top-wrapper {
         margin-top: 0;
         padding-top: 0;
-        border-bottom: 1px solid gray;
     }
     .category-btns {
         display: none;
@@ -750,14 +749,18 @@ nav.globalMenuSp.active {
     height: 38px;
 }
 .side-bar-btn i {
-    position: absolute;
-    top: 11px;
+    position: relative;
+    top: 5px;
     right: 10px;
 }
-/* .side-bar-btn:active {
+#footer-btn {
+    text-align: left;
+    padding: 0;
     font-weight: bold;
-} */
-
+}
+.footer-onlinestores-btns {
+    padding: 0;
+}
 /*---------------------------------
 product-wrapper
 ---------------------------------*/
@@ -827,7 +830,7 @@ product-wrapper
 }
 .product-card {
     padding: 12px;
-    border: 1px solid white; 
+
     /* width: 200px; */
 }
 .product-card:hover {
@@ -1066,6 +1069,7 @@ product-wrapper
     align-items: center;
     width: 100%;
 }
+
 .show-more-btn {
     text-decoration: underline;
     color: black;
@@ -1095,25 +1099,37 @@ product-wrapper
     .product-card {
         width: 50%;
         padding: 0px;
-        border: 1px solid gray;
+        border-right: 1px solid white;
     }
     .product-img {
         width: 100%;
     }
     .star5_rating:after {
-        color: orange;
+        color: #EBBE00;
     }
     .evaluation-num {
         color: black;
-        text-decoration: none;
+        
     }
     .show-more {
         padding: 20px;
         border-top: 1px solid gray;
         border-bottom: 1px solid gray;
+        text-decoration: none;
     }
     .product-txt {
         margin: 0 16.5px 21px;
+    }
+    .product-wrapper {
+        margin-bottom: 21px;
+    }
+    .show-more-btn {
+        margin-right: 10px;
+        text-decoration: none;
+    }
+    .blanck {
+        width: 100%;
+        height: 50px;
     }
 }
 
@@ -1158,15 +1174,32 @@ recommend-wrapper
     color: red;
     text-align: left;
 }
+@media only screen and (max-width: 480px) {
+    .recommend-heading {
+        font-size: 18px;
+    }
+    .recommend-wrapper {
+        margin: 0;
+        padding-bottom: 55px;
+        border-bottom: 1px solid gray;
+    }
+}
 /*---------------------------------
 category-wrapper
 ---------------------------------*/
 @media only screen and (max-width: 480px) {
     .category-wrapper-sp {
-        padding: 10px;
+        padding: 21px 16.5px;
+        border-bottom: 1px solid gray;
     }
     .category-btns-sp {
         color: black;
+    }
+    .category-btns-sp {
+        font-size: 13px;
+    }
+    .show-more-btn {
+        font-size: 14px;
     }
 }
 /*---------------------------------
@@ -1229,11 +1262,16 @@ small {
 
 @media only screen and (max-width: 480px) {
     .footer {
-        padding: 50px 0;
+        padding: 36px 0 74px 0;
+    }
+    .footer-inner-sp {
+        width: 90%;
+        margin: 0 auto;
     }
     .footer-info-btns {
         display: flex;
         flex-direction: column;
+        border-top: 2px solid #000;
     }
     .footer-btns {
         height: auto;
@@ -1244,11 +1282,28 @@ small {
     .footer-info-btn {
         color: black;
         border-bottom: 1px solid gray;
-        padding: 10px;
+        padding: 24px 0;
+        font-size: 14px;
+        margin: 0;
+        font-weight: bold;
     }
     .sns-btns {
         display: flex;
         flex-direction: column;
+        height: auto;
+    }
+    .sns-btns-text {
+        padding: 24px 0 10px;
+    }
+    .sns-btns-text span {
+        font-weight: bold;
+    }
+    .sns-btns ul {
+        padding: 0;
+        border-bottom: 1px solid gray;
+    }
+    .sns-btns ul li {
+        display: flex;
     }
     .fa-chevron-up {
         visibility: hidden;
@@ -1265,27 +1320,33 @@ small {
     .footer-onlinestores-btns {
         display: flex;
         flex-direction: column;
+        padding: 0;
     }
     .copylight {
         text-align: center;
+        font-size: 11px;
     }
     /*---------------------------------
     page top
     ---------------------------------*/
     .page-top {
         position: fixed;
-        bottom: 50px;
+        bottom: 75px;
         right: 0px;
+        opacity: .9;
+        border: 1px solid #ebebeb;
     }
 
     #page-top {
         display: flex;
         flex-direction: column;
-        font-size: 15px;
+        font-size: 13px;
         text-align: center;
         color: black;
         background-color: #fff;
         padding: 10px;
+        height: 50px;
+        width: 50px;
     }
 
     #page-top:hover {
@@ -1313,6 +1374,13 @@ small {
         align-items: center;
         text-decoration: none;
         color: white;
+        padding: 8.5px 0;
+    }
+    .bottom-nav-btn span {
+        font-size: 13px;
+    }
+    .bottom-nav-btn i {
+        font-size: 24px;
     }
     
 }
