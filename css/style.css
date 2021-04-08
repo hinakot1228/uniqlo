@@ -1170,6 +1170,11 @@ recommend-wrapper
     color: red;
     text-align: left;
 }
+@media only screen and (max-width: 480px) {
+    .recommend-heading {
+        font-size: 18px;
+    }
+}
 /*---------------------------------
 category-wrapper
 ---------------------------------*/
@@ -1247,7 +1252,7 @@ small {
 
 @media only screen and (max-width: 480px) {
     .footer {
-        padding: 74px 0;
+        padding: 36px 0 74px 0;
     }
     .footer-inner-sp {
         width: 90%;
@@ -1256,6 +1261,7 @@ small {
     .footer-info-btns {
         display: flex;
         flex-direction: column;
+        border-top: 2px solid #000;
     }
     .footer-btns {
         height: auto;
@@ -1317,6 +1323,8 @@ small {
         position: fixed;
         bottom: 75px;
         right: 0px;
+        opacity: .9;
+        border: 1px solid #ebebeb;
     }
 
     #page-top {
