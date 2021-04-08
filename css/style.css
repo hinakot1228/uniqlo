@@ -605,7 +605,7 @@ nav.globalMenuSp.active {
         align-items: center;
         height: 70px;
         width: 68px;
-        border: 1px solid gray;
+        border: 1px solid #e0e0e0;
         background-color: white;
     }
       .menu-items {
@@ -613,15 +613,15 @@ nav.globalMenuSp.active {
           justify-content: space-around;
           align-items: center;
           height: 70px;
-          border-top: 1px solid gray;
-          border-bottom: 1px solid gray;
+          border-top: 1px solid #e0e0e0;
+          border-bottom: 1px solid #e0e0e0;
           margin: 0;
           padding: 0;
       }
       .menu-item-num {
           height: 100%;
           width: 50%;
-          border-right: 1px solid gray;
+          border-right: 1px solid #e0e0e0;
           display: flex;
           align-items: center;
           padding: 0 4vw;
@@ -640,7 +640,7 @@ nav.globalMenuSp.active {
           font-size: 11px;
       }
       .menu-item-others.display, .menu-item-others.sorting {
-          border-right: 1px solid gray;
+          border-right: 1px solid #e0e0e0;
       }
       .menu-items div{
           height: 100%;
@@ -685,7 +685,6 @@ nav.globalMenuSp.active {
     .top-wrapper {
         margin-top: 0;
         padding-top: 0;
-        border-bottom: 1px solid gray;
     }
     .category-btns {
         display: none;
@@ -754,11 +753,14 @@ nav.globalMenuSp.active {
     top: 5px;
     right: 10px;
 }
-
-/* .side-bar-btn:active {
+#footer-btn {
+    text-align: left;
+    padding: 0;
     font-weight: bold;
-} */
-
+}
+.footer-onlinestores-btns {
+    padding: 0;
+}
 /*---------------------------------
 product-wrapper
 ---------------------------------*/
@@ -828,7 +830,7 @@ product-wrapper
 }
 .product-card {
     padding: 12px;
-    border: 1px solid white; 
+
     /* width: 200px; */
 }
 .product-card:hover {
@@ -1067,6 +1069,7 @@ product-wrapper
     align-items: center;
     width: 100%;
 }
+
 .show-more-btn {
     text-decoration: underline;
     color: black;
@@ -1096,28 +1099,33 @@ product-wrapper
     .product-card {
         width: 50%;
         padding: 0px;
-        border: 1px solid gray;
+        border-right: 1px solid white;
     }
     .product-img {
         width: 100%;
     }
     .star5_rating:after {
-        color: orange;
+        color: #EBBE00;
     }
     .evaluation-num {
         color: black;
-        text-decoration: none;
+        
     }
     .show-more {
         padding: 20px;
         border-top: 1px solid gray;
         border-bottom: 1px solid gray;
+        text-decoration: none;
     }
     .product-txt {
         margin: 0 16.5px 21px;
     }
     .product-wrapper {
         margin-bottom: 21px;
+    }
+    .show-more-btn {
+        margin-right: 10px;
+        text-decoration: none;
     }
 }
 
@@ -1271,6 +1279,9 @@ small {
     .sns-btns-text {
         padding: 24px 0 10px;
     }
+    .sns-btns-text span {
+        font-weight: bold;
+    }
     .sns-btns ul {
         padding: 0;
         border-bottom: 1px solid gray;
@@ -1293,6 +1304,7 @@ small {
     .footer-onlinestores-btns {
         display: flex;
         flex-direction: column;
+        padding: 0;
     }
     .copylight {
         text-align: center;
