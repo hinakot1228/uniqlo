@@ -257,8 +257,9 @@ ul {
   header-hamberger-menu
 ---------------------------------*/
 .header-sp {
-    display: flex;
-    justify-content: space-around;
+    display: flex !important;;
+    justify-content: space-between;
+    align-items: center;
     z-index: 10000;
     height: 70px;
     width: 100%;
@@ -268,6 +269,7 @@ ul {
     border-bottom: 1px solid #dadada;
     background-color: #fff;
     padding: 15px 16px;
+    position: relative;
 }
 .header-logo-sp {
     width: 90px;
@@ -275,10 +277,7 @@ ul {
 /*　ハンバーガーボタン　*/
 .hamburger {
   /* display : inline-block; */
-  position: fixed;
   z-index : 3;
-  right : 13px;
-  top   : 12px;
   width : 42px;
   /* height: 42px; */
   cursor: pointer;
@@ -303,6 +302,7 @@ ul {
 .header-accont-btn-text {
     display: inline-block;
     font-size: 11px;
+    margin: 0;
 }
 .hamburger2 {
     visibility: hidden;
@@ -348,7 +348,7 @@ nav.globalMenuSp ul li {
   list-style-type: none;
   padding: 0;
   width: 100%;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #e7e7e7;
 }
 nav.globalMenuSp ul li:last-child {
   padding-bottom: 0;
@@ -1127,6 +1127,10 @@ product-wrapper
         margin-right: 10px;
         text-decoration: none;
     }
+    .blanck {
+        width: 100%;
+        height: 50px;
+    }
 }
 
 /*---------------------------------
@@ -1174,6 +1178,11 @@ recommend-wrapper
     .recommend-heading {
         font-size: 18px;
     }
+    .recommend-wrapper {
+        margin: 0;
+        padding-bottom: 55px;
+        border-bottom: 1px solid gray;
+    }
 }
 /*---------------------------------
 category-wrapper
@@ -1181,6 +1190,7 @@ category-wrapper
 @media only screen and (max-width: 480px) {
     .category-wrapper-sp {
         padding: 21px 16.5px;
+        border-bottom: 1px solid gray;
     }
     .category-btns-sp {
         color: black;
