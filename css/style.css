@@ -1310,6 +1310,9 @@ small {
     }
     .fa-chevron-up {
         visibility: hidden;
+        position: relative !important;
+        top: 5px !important;
+        right: -2px !important;
     }
     .fa-chevron-down {
         visibility: visible;
