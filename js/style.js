@@ -1,4 +1,47 @@
 /*---------------------------------
+  PC画面のサイドバー「＋」「―」のボタン切り替え
+---------------------------------*/
+/*---------------------------------
+  モバイル画面のフッター「↑」「↓」のボタン切り替え
+---------------------------------*/
+
+$(function() {
+  $('.side-bar-btn').click(function() {
+    var category = $(this).hasClass('category-btn');
+    var price = $(this).hasClass('price-btn');
+    var size = $(this).hasClass('size-btn');
+    var color = $(this).hasClass('color-btn');
+    var others = $(this).hasClass('others-btn');
+    var footer = $(this).hasClass('footer-btn');
+
+    if(category) {
+      $(".category-btn").find('.fa-plus').toggleClass('hide-btn');
+      $(".category-btn").find('.fa-minus').toggleClass('show-btn');
+    }
+    else if(price) {
+      $(".price-btn").find('.fa-plus').toggleClass('hide-btn');
+      $(".price-btn").find('.fa-minus').toggleClass('show-btn');
+    }
+    else if(size) {
+      $(".size-btn").find('.fa-plus').toggleClass('hide-btn');
+      $(".size-btn").find('.fa-minus').toggleClass('show-btn');
+    }
+    else if(color) {
+      $(".color-btn").find('.fa-plus').toggleClass('hide-btn');
+      $(".color-btn").find('.fa-minus').toggleClass('show-btn');
+    }
+    else if(others) {
+      $(".others-btn").find('.fa-plus').toggleClass('hide-btn');
+      $(".others-btn").find('.fa-minus').toggleClass('show-btn');
+    }
+    else if(footer) {
+      $(".footer-btn").find('.fa-chevron-down').toggleClass('hide-btn');
+      $(".footer-btn").find('.fa-chevron-up').toggleClass('show-btn');
+    }
+  });
+});
+
+/*---------------------------------
   PC画面のサイドバーのアコーディオンメニュー
 ---------------------------------*/
 $(function() {
@@ -8,7 +51,7 @@ $(function() {
     var size = $(this).hasClass('size-btn');
     var color = $(this).hasClass('color-btn');
     var others = $(this).hasClass('others-btn');
-<<<<<<< Updated upstream
+
     var footer = $(this).hasClass('footer-btn');
     if(category){
       $('.category-btn').nextAll('.category-panel').slideToggle();
@@ -27,22 +70,6 @@ $(function() {
     }
     else if(footer){
       $('.footer-btn').nextAll('.footer-panel').slideToggle();
-=======
-    if(category){
-      $(this).nextAll('.category-panel').slideToggle();
-    }
-    if(price){
-      $(this).nextAll('.price-panel').slideToggle();
-    }
-    if(size){
-      $(this).nextAll('.size-panel').slideToggle();
-    }
-    if(color){
-      $(this).nextAll('.color-panel').slideToggle();
-    }
-    if(others){
-      $(this).nextAll('.others-panel').slideToggle();
->>>>>>> Stashed changes
     }
   });
 });
@@ -131,48 +158,7 @@ $(function() {
   });
 });
 
-/*---------------------------------
-  PC画面のサイドバー「＋」「―」のボタン切り替え
----------------------------------*/
-/*---------------------------------
-  モバイル画面のフッター「↑」「↓」のボタン切り替え
----------------------------------*/
 
-$(function() {
-  $('.side-bar-btn').click(function() {
-    var category = $(this).hasClass('category-btn');
-    var price = $(this).hasClass('price-btn');
-    var size = $(this).hasClass('size-btn');
-    var color = $(this).hasClass('color-btn');
-    var others = $(this).hasClass('others-btn');
-    var footer = $(this).hasClass('footer-btn');
-
-    if(category) {
-      $(".category-btn").find('.fa-plus').toggleClass('hide-btn');
-      $(".category-btn").find('.fa-minus').toggleClass('show-btn');
-    }
-    else if(price) {
-      $(".price-btn").find('.fa-plus').toggleClass('hide-btn');
-      $(".price-btn").find('.fa-minus').toggleClass('show-btn');
-    }
-    else if(size) {
-      $(".size-btn").find('.fa-plus').toggleClass('hide-btn');
-      $(".size-btn").find('.fa-minus').toggleClass('show-btn');
-    }
-    else if(color) {
-      $(".color-btn").find('.fa-plus').toggleClass('hide-btn');
-      $(".color-btn").find('.fa-minus').toggleClass('show-btn');
-    }
-    else if(others) {
-      $(".others-btn").find('.fa-plus').toggleClass('hide-btn');
-      $(".others-btn").find('.fa-minus').toggleClass('show-btn');
-    }
-    else if(footer) {
-      $(".footer-btn").find('.fa-chevron-down').toggleClass('hide-btn');
-      $(".footer-btn").find('.fa-chevron-up').toggleClass('show-btn');
-    }
-  });
-});
 
 /*---------------------------------
   モバイル画面のトップスクロール
