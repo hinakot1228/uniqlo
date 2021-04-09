@@ -17,6 +17,7 @@ $(function() {
     if(category) {
       $(".category-btn").find('.fa-plus').toggleClass('hide-btn');
       $(".category-btn").find('.fa-minus').toggleClass('show-btn');
+
     }
     else if(price) {
       $(".price-btn").find('.fa-plus').toggleClass('hide-btn');
@@ -38,6 +39,36 @@ $(function() {
       $(".footer-btn").find('.fa-chevron-down').toggleClass('hide-btn');
       $(".footer-btn").find('.fa-chevron-up').toggleClass('show-btn');
     }
+  });
+});
+
+$(function(){
+  $('.side-bar-btn').hover(function() {
+    var category = $(this).hasClass('category-btn');
+    var price = $(this).hasClass('price-btn');
+    var size = $(this).hasClass('size-btn');
+    var color = $(this).hasClass('color-btn');
+    var others = $(this).hasClass('others-btn');
+    var footer = $(this).hasClass('footer-btn');
+
+    if(category){
+      $(".category-btn").children('.fas').css('color', 'gray');
+    }
+    if(price){
+      $(".price-btn").children('.fas').css('color', 'gray');
+    }
+    if(size){
+      $(".size-btn").children('.fas').css('color', 'gray');
+    }
+    if(color){
+      $(".color-btn").children('.fas').css('color', 'gray');
+    }
+    if(others){
+      $(".others-btn").children('.fas').css('color', 'gray');
+    }
+  }, function() {
+      $(".category-btn, .price-btn, .size-btn ,.color-btn, .others-btn").children('.fas').css('color', '');
+
   });
 });
 
