@@ -8,6 +8,7 @@ $(function() {
     var size = $(this).hasClass('size-btn');
     var color = $(this).hasClass('color-btn');
     var others = $(this).hasClass('others-btn');
+<<<<<<< Updated upstream
     var footer = $(this).hasClass('footer-btn');
     if(category){
       $('.category-btn').nextAll('.category-panel').slideToggle();
@@ -26,6 +27,22 @@ $(function() {
     }
     else if(footer){
       $('.footer-btn').nextAll('.footer-panel').slideToggle();
+=======
+    if(category){
+      $(this).nextAll('.category-panel').slideToggle();
+    }
+    if(price){
+      $(this).nextAll('.price-panel').slideToggle();
+    }
+    if(size){
+      $(this).nextAll('.size-panel').slideToggle();
+    }
+    if(color){
+      $(this).nextAll('.color-panel').slideToggle();
+    }
+    if(others){
+      $(this).nextAll('.others-panel').slideToggle();
+>>>>>>> Stashed changes
     }
   });
 });
