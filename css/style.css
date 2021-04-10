@@ -6,11 +6,10 @@
 
 a {
     text-decoration: none;
-    
 }
-/* button {
-    outline: none !important;
-} */
+a:hover {
+    color: black !important;
+}
 ul {
     list-style: none;
 }
@@ -411,6 +410,9 @@ nav.globalMenuSp.active {
 .menu-nav-btn-list.women, .menu-nav-btn-list.kids, .menu-nav-btn-list.baby {
     background-color: #F4F4F4;
 }
+.menu-nav-btn:hover {
+    color: black;
+}
 /* .menu-nav-btn.women, .menu-nav-btn.kids, .menu-nav-btn.baby { */
     /* background-color: gray; */
     /* border-bottom: 1px solid gray; */
@@ -727,19 +729,28 @@ nav.globalMenuSp.active {
     /* width: 85px; */
     padding: 0 .75rem;
     text-align:center;
-    color: black;
+    color: #ababab;
     text-decoration: none;
     font-size: 16px;
     height: 60px;
     display: flex;
     align-items: center;
+    font-weight: bold;
+}
+.kinds-tab-btn.men {
+    border-bottom: 1px solid #000;
+    color: black;
+}
+.kinds-tab-btn:hover {
+    color: black;
 }
 .kinds-tab-btn-underline {
     padding-bottom: 4px;
 }
 
 .kinds-tab-btn-underline:hover {
-    border-bottom: 2px solid #1b1b1b;
+    /* border-bottom: 2px solid #1b1b1b; */
+    color: gray;
 }
 #side-bar-btn {
     text-align: left;
@@ -747,6 +758,11 @@ nav.globalMenuSp.active {
     position: relative;
     padding: 0;
     height: 38px;
+    color: #ababab;
+}
+.category-btn.click, .price-btn.click, .size-btn.click, .color-btn.click, .others-btn.click {
+    color: black !important;
+    font-weight: bold;
 }
 .side-bar-btn i {
     position: relative;
@@ -1256,7 +1272,7 @@ small {
     font-size: 40px;
     margin: 0 16px 16px 0;
     height: 40px;
-    display: inherit
+    /* display: inherit */
 }
 .sns-btn i {
     width: 100%;
