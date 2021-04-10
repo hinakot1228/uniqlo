@@ -442,7 +442,6 @@ nav.globalMenuSp.active {
     /* margin: 51px 0 34px 0; */
     /* border-bottom: 1px #ccc solid; */
     padding: 24px 0 15px;
-    display: none;
     -webkit-transform: translateY(0);
     transform: translateY(0);
     position: fixed;
@@ -452,12 +451,19 @@ nav.globalMenuSp.active {
     width: 100%;
     transition: 0.3s ease-in-out;
     border-bottom: 1px solid #ccc;
+    /* visibility: hidden; */
+    /* display: none; */
 }
 .menu-wrapper2._show {
+    /* visibility: visible; */
     position: fixed;
     top: 74px;
     left: 0;
    }
+   .menu-wrapper2.none {
+       visibility: hidden;
+   }
+
 .hideClass {
     transform: translateY(-74px);
   }
