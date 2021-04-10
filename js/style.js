@@ -239,3 +239,25 @@ $(function() {
     $('.sorting-menu').toggleClass('show');
   });
 });
+
+/*---------------------------------
+  headroom.js
+---------------------------------*/
+var pos = 0;
+$(window).on('scroll', function(){
+ 
+  if($(this).scrollTop() > 300 ){
+    if($(this).scrollTop() < pos ){
+      //上スクロール時に表示
+      $('.menu-wrapper').addClass('_show');
+    }else{
+      //下スクロール時に表示
+      $('.menu-wrapper').removeClass('_show');
+    }
+  } else {
+    $('.menu-wrapper').addClass('_show');
+  }
+ 
+  //スクロールが停止した位置を保持
+  pos = $(this).scrollTop();
+});
