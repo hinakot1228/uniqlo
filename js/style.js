@@ -17,31 +17,40 @@ $(function() {
     if(category) {
       $(".category-btn").find('.fa-plus').toggleClass('hide-btn');
       $(".category-btn").find('.fa-minus').toggleClass('show-btn');
-
+      $(".category-btn").toggleClass('click');
     }
     else if(price) {
       $(".price-btn").find('.fa-plus').toggleClass('hide-btn');
       $(".price-btn").find('.fa-minus').toggleClass('show-btn');
+      $(".price-btn").toggleClass('click');     
     }
     else if(size) {
       $(".size-btn").find('.fa-plus').toggleClass('hide-btn');
       $(".size-btn").find('.fa-minus').toggleClass('show-btn');
+      $(".size-btn").toggleClass('click');
     }
     else if(color) {
       $(".color-btn").find('.fa-plus').toggleClass('hide-btn');
       $(".color-btn").find('.fa-minus').toggleClass('show-btn');
+      $(".color-btn").toggleClass('click');
     }
     else if(others) {
       $(".others-btn").find('.fa-plus').toggleClass('hide-btn');
       $(".others-btn").find('.fa-minus').toggleClass('show-btn');
+      $(".others-btn").toggleClass('click');
     }
     else if(footer) {
       $(".footer-btn").find('.fa-chevron-down').toggleClass('hide-btn');
       $(".footer-btn").find('.fa-chevron-up').toggleClass('show-btn');
     }
   });
+  // , function() {
+  //   $(".category-btn, .price-btn, .size-btn ,.color-btn, .others-btn").css('color', '#ababab');
+  // });
 });
-
+/*---------------------------------
+  アコーディオンメニューのhover時
+---------------------------------*/
 $(function(){
   $('.side-bar-btn').hover(function() {
     var category = $(this).hasClass('category-btn');

@@ -760,6 +760,10 @@ nav.globalMenuSp.active {
     height: 38px;
     color: #ababab;
 }
+.category-btn.click, .price-btn.click, .size-btn.click, .color-btn.click, .others-btn.click {
+    color: black !important;
+    font-weight: bold;
+}
 .side-bar-btn i {
     position: relative;
     top: 5px;
@@ -1268,7 +1272,7 @@ small {
     font-size: 40px;
     margin: 0 16px 16px 0;
     height: 40px;
-    display: inherit
+    /* display: inherit */
 }
 .sns-btn i {
     width: 100%;
