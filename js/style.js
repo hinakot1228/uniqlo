@@ -245,7 +245,6 @@ $(function() {
 ---------------------------------*/
 var pos = 0;
 $(window).on('scroll', function(){
- 
   if($(this).scrollTop() > 300 ){
     if($(this).scrollTop() < pos ){
       //上スクロール時に表示
@@ -255,7 +254,8 @@ $(window).on('scroll', function(){
       $('.menu-wrapper2').removeClass('_show');
     }
   } else {
-    $('.menu-wrapper2').addClass('_show');
+    // $('.menu-wrapper2').addClass('_show');
+      $('.menu-wrapper2').addClass('none');
   }
  
   //スクロールが停止した位置を保持
