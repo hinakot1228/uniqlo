@@ -249,13 +249,13 @@ $(window).on('scroll', function(){
   if($(this).scrollTop() > 300 ){
     if($(this).scrollTop() < pos ){
       //上スクロール時に表示
-      $('.menu-wrapper').addClass('_show');
+      $('.menu-wrapper2').addClass('_show');
     }else{
       //下スクロール時に表示
-      $('.menu-wrapper').removeClass('_show');
+      $('.menu-wrapper2').removeClass('_show');
     }
   } else {
-    $('.menu-wrapper').addClass('_show');
+    $('.menu-wrapper2').addClass('_show');
   }
  
   //スクロールが停止した位置を保持
