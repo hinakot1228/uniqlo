@@ -247,6 +247,7 @@ var pos = 0;
 
 $(window).on('scroll', function(){
   if($(this).scrollTop() > 300 ){
+    $('.menu-wrapper2').removeClass('_none');
     if($(this).scrollTop() > pos ){
       //上スクロール時に表示
       $('.menu-wrapper2').removeClass('_show');
@@ -255,10 +256,9 @@ $(window).on('scroll', function(){
       $('.menu-wrapper2').addClass('_show');
     }
   } 
-  // else {
-  //   $('.menu-wrapper2').toggleClass('none');
-  // }
- 
+  else {
+    $('.menu-wrapper2').removeClass('_show').addClass('_none');
+  }
   //スクロールが停止した位置を保持
   pos = $(this).scrollTop();
 });
