@@ -448,7 +448,11 @@ nav.globalMenuSp.active {
     background-color: #fff;
     width: 100%;
     transition: 0.3s ease-in-out;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid #ebebeb;
+}
+.menu2-inner {
+    margin-left: 76px;
+    margin-right: 69px;
 }
 .menu-wrapper2._show {
     visibility: visible;
@@ -456,7 +460,7 @@ nav.globalMenuSp.active {
     position: fixed;
     top: 73px;
     left: 0;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 2px solid #ebebeb;
    }
 .menu-wrapper2._none {
     transition: none !important;
@@ -686,7 +690,7 @@ nav.globalMenuSp.active {
 ---------------------------------*/
 .top-wrapper {
     margin-top: 43px;
-    padding-top: 50px;
+    padding-top: 74px;
 }
 .category-btns {
     padding-bottom: 32px;
