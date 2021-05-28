@@ -6,7 +6,7 @@ HTML,CSS,JavaScript,JQueryのスキル向上のため、ユニクロの既存サ
 URL：https://hinakot1228.github.io/uniqlo.github.io/
 
 # 制作期間
-半月
+16日
 
 # 使用技術
 - HTML
